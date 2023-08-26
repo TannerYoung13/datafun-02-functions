@@ -1,0 +1,16 @@
+2023-08-26 15:58:13,442.user_math_Tanner.INFO ==================================================
+2023-08-26 15:58:13,442.user_math_Tanner.INFO Today is 2023-08-26 at 03:58 PM
+2023-08-26 15:58:13,465.user_math_Tanner.INFO Running on: nt Windows 10
+2023-08-26 15:58:13,465.user_math_Tanner.INFO Python version:  3.11.4
+2023-08-26 15:58:13,465.user_math_Tanner.INFO Python path: C:\Users\ksu09\AppData\Local\Programs\Python\Python311
+2023-08-26 15:58:13,466.user_math_Tanner.INFO Working dir: C:\Users\ksu09\Intro to Python\datafun-02-functions
+2023-08-26 15:58:13,466.user_math_Tanner.INFO ==================================================
+2023-08-26 15:58:13,466.user_math_Tanner.INFO Explore some functions in the math module
+2023-08-26 15:58:13,467.user_math_Tanner.INFO math.comb(5,1) = 5
+2023-08-26 15:58:13,467.user_math_Tanner.INFO math.perm(5,1) = 5
+2023-08-26 15:58:13,467.user_math_Tanner.INFO math.comb(5,3) = 10
+2023-08-26 15:58:13,467.user_math_Tanner.INFO math.perm(5,3) = 60
+2023-08-26 15:58:13,468.user_math_Tanner.INFO math.pi = 3.141592653589793
+2023-08-26 15:58:13,468.user_math_Tanner.INFO math.degrees(2 * math.pi) = 360.0
+2023-08-26 15:58:13,468.user_math_Tanner.INFO math.radians(180)         = 3.141592653589793
+2023-08-26 15:58:13,468.user_math_Tanner.INFO 
