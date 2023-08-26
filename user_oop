@@ -1,0 +1,33 @@
+class NumericSeries:
+    def __init__(self, data):
+        self.data = data
+
+    def display_data(self):
+        print("Data Points:", self.data)
+
+class NumericSalesSeries(NumericSeries):
+    def __init__(self, data, product_type):
+        super().__init__(data)
+        self.product_type = product_type
+
+    def display_info(self):
+        self.display_data()
+        print("Product Type:", self.product_type)
+
+    def calculate_total_revenue(self, prices):
+        total_revenue = sum(sale * price for sale, price in zip(self.data, prices))
+        return total_revenue
+
+# Example data for sales and prices
+sales = [100, 150, 80, 200, 120]
+product_prices = [10, 20, 8, 15, 12]
+
+# Creating an instance of NumericSalesSeries
+sales_series = NumericSalesSeries(sales, "Electronics")
+
+# Displaying information about the sales series
+sales_series.display_info()
+
+# Calculating and displaying the total revenue
+total_revenue = sales_series.calculate_total_revenue(product_prices)
+print("Total Revenue:", total_revenue)
