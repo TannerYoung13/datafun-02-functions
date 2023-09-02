@@ -38,9 +38,27 @@ Log the result of each function just before you return the result
 """
 
 import doctest
+import logging
 
 from util_logger import setup_logger
-logger, logname = setup_logger(__file__)
+logger = logging.getLogger(__name__)
+logname = setup_logger(__file__)
+logging.basicConfig(filename=logname, level=logging.INFO)
+
+def add(x, y):
+    """
+    Add two numbers and log the function call and result.
+
+    >>> add(2, 3)
+    5
+    >>> add(5, 7)
+    12
+    """
+    logger.info(f"Calling add function with arguments x={x} and y={y}")
+    result = x + y
+    logger.info(f"Result of add function: {result}")
+    return result
+
 
 # TODO: Add functions to get the unit tests to pass 
 # TODO: Log each time the function is called (along with its arguments)
@@ -61,10 +79,14 @@ def transform_using_keyword_args_with_default_values(input="bearcat", reverse=Fa
     s = f"CALLING transform_using_keyword_args_with_default_values(input={input}, reverse={reverse})"
     logger.info(s)
 
-    result = input
+    first_3_letters = input[:3]
 
-    logger.info(f"RETURNING {result}")
-    return result
+    # Reverse them if reverse is True
+    if reverse:
+        first_3_letters = first_3_letters[::-1]
+
+    logger.info(f"RETURNING {first_3_letters}")
+    return first_3_letters
 
 
 
